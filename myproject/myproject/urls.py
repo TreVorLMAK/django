@@ -1,5 +1,9 @@
 """
+<<<<<<< HEAD
 URL configuration for cms project.
+=======
+URL configuration for myproject project.
+>>>>>>> c464e3426f14e6979fe4607f8c4da5e52888b5d5
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -15,6 +19,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+<<<<<<< HEAD
 from django.conf.urls.static import static
 from django.urls import path,include
 from django.conf import settings
@@ -23,3 +28,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/',include('blog.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+=======
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('blog/', include ('blog.urls'))
+]
+>>>>>>> c464e3426f14e6979fe4607f8c4da5e52888b5d5

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.shortcuts import get_object_or_404, render,redirect
 from ..models import Blogs
 from django.contrib.auth.decorators import login_required
@@ -31,3 +32,9 @@ def delete_blog(request,blog_id):
    blog =  get_object_or_404(Blogs,pk=blog_id)
    blog.delete()
    return redirect("home")
+=======
+from django.shortcuts import render
+
+def renderHomepage(request):
+    return render(request, 'home/index.html')
+>>>>>>> c464e3426f14e6979fe4607f8c4da5e52888b5d5
